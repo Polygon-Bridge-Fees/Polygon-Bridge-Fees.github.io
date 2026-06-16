@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://polygon-bridge-fees.github.io/sitemap.xml
