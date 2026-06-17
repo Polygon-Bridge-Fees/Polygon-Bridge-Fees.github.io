@@ -1,0 +1,128 @@
+{
+  "key_facts": {
+    "Category": "Cross-chain bridge",
+    "Network": "Polygon and Ethereum",
+    "Token": "POL",
+    "Custody": "Non-custodial bridge transactions",
+    "Gas Token": "POL on Polygon, ETH on Ethereum"
+  },
+  "intent": [
+    {
+      "q": "Polygon bridge fees from Ethereum to Polygon",
+      "a": "Polygon bridge fees depend on direction, route, token, and gas conditions. Moving assets from Ethereum to Polygon usually requires an Ethereum transaction paid in ETH, plus a Polygon-side transaction when applicable. The actual bridge contract may not charge a simple fixed percentage, but users still pay network gas and can face token approval costs. Third-party bridges or cross-chain routers may add their own fee or include it in the quote. The official Polygon Portal is the safest starting point for a standard route, while cross-chain aggregators can be compared for speed and total received. Always check source chain, destination chain, estimated time, and token address."
+    },
+    {
+      "q": "Polygon bridge withdrawal time and fees",
+      "a": "Withdrawing from Polygon to Ethereum can cost more and take longer than bridging into Polygon because Ethereum settlement and bridge design matter. Users may pay Polygon gas to initiate, then Ethereum gas to claim or complete the withdrawal depending on the route. Official and third-party routes can have different wait times, fees, liquidity models, and trust assumptions. If speed is the priority, a liquidity bridge may be faster but should be evaluated for provider risk and output amount. If canonical security is the priority, the official route may be preferred even when it takes longer."
+    },
+    {
+      "q": "Polygon Portal bridge vs third-party bridges",
+      "a": "Polygon Portal is the official interface for bridging, swapping, and managing Polygon assets. Third-party bridges can be useful when they offer faster settlement, more source chains, or a better final quote, but they introduce additional contracts, liquidity providers, and sometimes relayer risk. The comparison should not stop at the headline bridge fee. Users should compare total received, gas on both chains, token representation, expected completion time, refund path, and whether the bridge supports the exact token contract they hold. For large transfers, use a small test bridge first and confirm the destination token in the receiving wallet."
+    },
+    {
+      "q": "Polygon bridge gas token and approvals",
+      "a": "A Polygon bridge transaction may require gas on both the source and destination networks. On Ethereum, fees are paid in ETH. On Polygon, normal transactions use POL as the native gas and staking token. ERC-20 tokens often need an approval transaction before the bridge can move them, which means a user may see one transaction for approval and another for the actual bridge. Approvals should be limited where practical and revoked when no longer needed. If a bridge page asks for a seed phrase, private key, or a token transfer to an unrelated address, it is not a normal bridge flow."
+    },
+    {
+      "q": "How to reduce Polygon bridge fees",
+      "a": "To reduce Polygon bridge fees, compare total received across official and reputable third-party routes, avoid bridging during high Ethereum gas periods, and batch transfers instead of sending many small transactions. For small amounts, an exchange withdrawal directly to Polygon may sometimes be cheaper than bridging from Ethereum, though it is custodial. If the token is available on multiple chains, swapping to a more liquid asset before bridging can reduce slippage, but it adds trade risk. Do not chase the lowest fee blindly: unsupported token representations, poor liquidity, or weak bridge security can cost more than a higher gas estimate."
+    }
+  ],
+  "compare": {
+    "title": "Polygon Portal bridge vs liquidity bridges",
+    "rows": [
+      [
+        "Dimension",
+        "Polygon Portal",
+        "Third-party liquidity bridge"
+      ],
+      [
+        "Role",
+        "Official Polygon bridge and asset portal",
+        "Independent routing or liquidity provider"
+      ],
+      [
+        "Cost",
+        "Network gas and route-specific costs",
+        "Gas plus provider fee or quoted spread"
+      ],
+      [
+        "Speed",
+        "Depends on official route and direction",
+        "Often optimized for faster delivery"
+      ],
+      [
+        "Risk",
+        "Canonical interface and bridge assumptions",
+        "Additional smart-contract and liquidity-provider risk"
+      ]
+    ]
+  },
+  "faq": [
+    {
+      "q": "Does Polygon Bridge charge a fixed fee?",
+      "a": "Bridge cost is usually not just a fixed fee. Users pay network gas, and some routes or third-party providers may include service fees or spreads. The best comparison is the final amount received after gas, route fees, and slippage."
+    },
+    {
+      "q": "Why is bridging from Polygon to Ethereum expensive?",
+      "a": "The Ethereum side can dominate cost because claiming or completing a withdrawal may require an Ethereum transaction paid in ETH. When Ethereum gas is high, the total bridge cost rises even if the Polygon-side transaction is cheap."
+    },
+    {
+      "q": "What token pays gas on Polygon now?",
+      "a": "POL is the native gas and staking token for Polygon after the MATIC-to-POL migration. Users still need ETH for Ethereum-side transactions, so a bridge route involving Ethereum can require both ETH and POL at different steps."
+    },
+    {
+      "q": "Can I bridge USDC to Polygon?",
+      "a": "Yes, but users must distinguish native and bridged token representations. Check the destination token contract and route details before bridging. A wallet can show the same ticker for different contracts, which matters for exchanges, DeFi apps, and liquidity."
+    },
+    {
+      "q": "How long does Polygon Bridge take?",
+      "a": "Timing depends on route, direction, token, and whether the bridge is canonical or liquidity-based. Some routes can complete quickly, while withdrawals to Ethereum may require additional waiting and a separate claim transaction. The bridge quote should show the expected timing."
+    },
+    {
+      "q": "Is the Polygon bridge the same as Agglayer?",
+      "a": "No. Polygon Portal bridge is a user-facing asset movement interface, while Agglayer is Polygon's broader interoperability layer for connected chains and unified liquidity. Both relate to cross-chain movement, but they are not the same product or user flow."
+    }
+  ],
+  "niche": {
+    "type": "bridge",
+    "asset": "ETH",
+    "receive": "POL",
+    "supported_networks": [
+      "Ethereum",
+      "Polygon"
+    ]
+  },
+  "authority": [
+    {
+      "text": "Polygon Portal bridge",
+      "url": "https://portal.polygon.technology/bridge"
+    },
+    {
+      "text": "Polygon official site",
+      "url": "https://polygon.technology/"
+    },
+    {
+      "text": "Polygon cross-chain docs",
+      "url": "https://docs.polygon.technology/cross-chain/swap-bridge.md"
+    },
+    {
+      "text": "Polygon unified bridge docs",
+      "url": "https://docs.polygon.technology/interoperability/agglayer/core-concepts/unified-bridge/asset-bridging.md"
+    },
+    {
+      "text": "POL token page",
+      "url": "https://pol.polygon.technology/"
+    },
+    {
+      "text": "Polygon on DeFiLlama",
+      "url": "https://defillama.com/chain/Polygon"
+    }
+  ],
+  "sameAs": [
+    "https://x.com/0xPolygon",
+    "https://github.com/maticnetwork",
+    "https://www.coingecko.com/en/coins/polygon",
+    "https://defillama.com/chain/Polygon"
+  ]
+}
