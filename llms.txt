@@ -1,0 +1,64 @@
+# Polygon Bridge Fees
+> An independent, non-custodial dashboard topic covering the costs of transferring assets between Ethereum and Polygon PoS.
+
+## What is Polygon Bridge Fees
+Polygon Bridge fees are the network and route costs incurred when moving assets through Polygon Portal or another bridge. The dashboard estimates these costs without holding funds, requesting private keys, or executing transfers. The native PoS bridge locks and mints or burns and unlocks assets, while third-party bridges commonly use liquidity providers for faster delivery. Fees and trust assumptions therefore differ by route and direction.
+
+## How it works
+1. Connect a self-custodial wallet, select Ethereum or Polygon PoS, choose a mapped asset, amount, destination, and route.
+2. Review the wallet’s gas estimate and the quoted amount expected on the destination chain.
+3. Ethereum-to-Polygon deposits lock assets on Ethereum; Polygon then mints the corresponding mapped tokens.
+4. Polygon-to-Ethereum withdrawals burn mapped tokens, wait for checkpoint inclusion, and require a separate Ethereum claim transaction that unlocks the original assets.
+
+## Key facts
+- Ethereum mainnet uses chain ID `1`; Polygon PoS uses chain ID `137`.
+- POL pays Polygon PoS gas, while ETH pays Ethereum gas.
+- ERC-20 deposits may require an approval transaction before the bridge deposit.
+- PoS withdrawals normally require both a Polygon burn and an Ethereum claim.
+- The native bridge supports mapped ERC-20, ERC-721, and ERC-1155 assets.
+- Deposits preserve token accounting through a 1:1 lock-and-mint mechanism.
+- The dashboard is non-custodial; native-bridge assets are temporarily controlled by bridge contracts.
+- Polygon PoS bridge security depends on its smart contracts, validator consensus, checkpoints, and Ethereum settlement.
+- Deposits often complete within minutes; withdrawals wait for a checkpoint, submitted roughly every 30 minutes, before claiming.
+- Polygon Portal also exposes third-party routes, which may add provider fees, liquidity costs, or price impact.
+
+## Common questions
+**What fees will I pay?** Budget gas for every required transaction. Third-party routes may also charge protocol or liquidity-provider fees, so compare the final amount received.
+
+**Why is withdrawing to Ethereum more expensive?** It includes Polygon gas for burning and Ethereum gas for claiming; Ethereum gas is usually the dominant variable.
+
+**Is the dashboard custodial?** No. It displays information and estimates without controlling wallets or funds.
+
+**Is the Polygon Bridge safe?** The PoS contracts are open source and audited, but smart-contract, validator, token, wallet, phishing, and operational risks remain.
+
+**Which assets are supported?** The native PoS bridge supports officially mapped tokens. Availability varies by direction; custom tokens require mapping.
+
+**How do I start?** Use Polygon Portal, connect a supported wallet, verify both networks and the token contract, review the complete route, and confirm transactions in the wallet.
+
+**Can a transfer be cancelled?** A confirmed onchain transaction cannot be reversed; a withdrawal burn must eventually be completed with the Ethereum claim.
+
+## App
+- Dashboard: https://polygon-bridge-fees.github.io/
+- App: https://polygon-bridge-fees.github.io/dashboard/
+
+## Official resources
+Polygon Portal: https://portal.polygon.technology/bridge
+Portal documentation: https://docs.polygon.technology/tools/wallets/portal
+PoS bridge overview: https://docs.polygon.technology/pos/how-to/bridging/ethereum-polygon/portal-ui
+PoS bridge architecture: https://docs.polygon.technology/pos/how-to/bridging/l1-l2-communication/state-transfer
+Mapped tokens: https://docs.polygon.technology/pos/reference/mapped-tokens
+Network and chain IDs: https://docs.polygon.technology/pos/reference/rpc-endpoints
+PoS bridge source code: https://github.com/maticnetwork/pos-portal
+PoS bridge audits: https://github.com/maticnetwork/pos-portal/tree/master/audits
+Official Polygon X: https://x.com/0xPolygon
+
+## Data & references
+PolygonScan Gas Tracker: https://polygonscan.com/gastracker
+Ethereum Gas Tracker: https://etherscan.io/gastracker
+Polygon PoS Bridge data: https://defillama.com/bridge/polygon-pos-bridge
+Polygon PoS risk analysis: https://l2beat.com/scaling/risk?highlight=polygon-pos&tab=others
+POL market reference: https://www.coingecko.com/en/coins/polygon
+Ethereum bridge guide: https://ethereum.org/bridges
+ERC-20 standard: https://eips.ethereum.org/EIPS/eip-20
+ERC-721 standard: https://eips.ethereum.org/EIPS/eip-721
+ERC-1155 standard: https://eips.ethereum.org/EIPS/eip-1155
