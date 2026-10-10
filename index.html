@@ -16,7 +16,7 @@
   <meta name="twitter:description" content="Break down Polygon Bridge Fees before you sign: Ethereum gas on deposit, the checkpoint cost on withdrawal, POL gas on Polygon, and how PoS, zkEVM and third-party routes compare on price.">
   <meta name="twitter:image" content="https://polygon-bridge-fees.github.io/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://polygon-bridge-fees.github.io/#website", "url": "https://polygon-bridge-fees.github.io/", "name": "Polygon Bridge Fees — Deposit, Withdrawal & POL Gas Costs"}, {"@type": "WebPage", "@id": "https://polygon-bridge-fees.github.io/#webpage", "url": "https://polygon-bridge-fees.github.io/", "name": "Polygon Bridge Fees — Deposit, Withdrawal & POL Gas Costs", "isPartOf": {"@id": "https://polygon-bridge-fees.github.io/#website"}, "description": "Break down Polygon Bridge Fees before you sign: Ethereum gas on deposit, the checkpoint cost on withdrawal, POL gas on Polygon, and how PoS, zkEVM and third-party routes compare on price.", "datePublished": "2026-10-09", "dateModified": "2026-10-09"}, {"@type": "SoftwareApplication", "name": "Polygon Bridge Fees", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://polygon-bridge-fees.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Bridges"}, {"@type": "ListItem", "position": 3, "name": "Polygon Bridge Fees"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What exactly do Polygon Bridge Fees include?", "acceptedAnswer": {"@type": "Answer", "text": "Polygon Bridge Fees cover four things: the Ethereum gas for your deposit transaction, the checkpoint wait a withdrawal needs, the POL gas you spend once active on Polygon, and — only on some routes — a relayer or liquidity fee on top of network gas."}}, {"@type": "Question", "name": "Why is depositing to Polygon cheaper than withdrawing?", "acceptedAnswer": {"@type": "Answer", "text": "A deposit is a single Ethereum transaction, while a withdrawal needs two: one to start the exit on Polygon and a second Ethereum transaction to finalize it once the checkpoint containing it has been submitted. That extra transaction and the wait are the whole difference."}}, {"@type": "Question", "name": "Do I pay Polygon Bridge Fees in ETH or POL?", "acceptedAnswer": {"@type": "Answer", "text": "Both, depending on which side of the trip you're on. The deposit transaction is paid in ETH on Ethereum; once you're on Polygon, every transaction — including starting a withdrawal — is paid in POL."}}, {"@type": "Question", "name": "How long does a Polygon checkpoint take?", "acceptedAnswer": {"@type": "Answer", "text": "Polygon submits checkpoints to Ethereum on a rolling basis, typically every few minutes to a few hours depending on network conditions, so a withdrawal's wait time varies with where your transaction falls relative to the next one."}}, {"@type": "Question", "name": "Are Polygon zkEVM bridge costs different from the PoS bridge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The zkEVM bridge adds proof-verification gas on top of the base Ethereum cost, which usually makes it a little more expensive than the PoS bridge for the same transfer, in exchange for a validity-proof security model."}}, {"@type": "Question", "name": "Can a third-party bridge lower my total Polygon Bridge Fees?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes for withdrawals, where a fast-exit route trades its own fee for skipping the checkpoint wait. For deposits it rarely helps, since the Ethereum gas cost is the same no matter which contract you call."}}, {"@type": "Question", "name": "What's the single biggest lever for lowering Polygon Bridge Fees?", "acceptedAnswer": {"@type": "Answer", "text": "Timing your Ethereum gas. Since the deposit side of Polygon Bridge Fees is almost entirely Ethereum gas, checking a gas tracker and bridging during a quiet window saves more than any other single choice."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://polygon-bridge-fees.github.io/#website", "url": "https://polygon-bridge-fees.github.io/", "name": "Polygon Bridge Fees — Deposit, Withdrawal & POL Gas Costs"}, {"@type": "WebPage", "@id": "https://polygon-bridge-fees.github.io/#webpage", "url": "https://polygon-bridge-fees.github.io/", "name": "Polygon Bridge Fees — Deposit, Withdrawal & POL Gas Costs", "isPartOf": {"@id": "https://polygon-bridge-fees.github.io/#website"}, "description": "Break down Polygon Bridge Fees before you sign: Ethereum gas on deposit, the checkpoint cost on withdrawal, POL gas on Polygon, and how PoS, zkEVM and third-party routes compare on price.", "datePublished": "2026-10-10", "dateModified": "2026-10-10"}, {"@type": "SoftwareApplication", "name": "Polygon Bridge Fees", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://polygon-bridge-fees.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Bridges"}, {"@type": "ListItem", "position": 3, "name": "Polygon Bridge Fees"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What exactly do Polygon Bridge Fees include?", "acceptedAnswer": {"@type": "Answer", "text": "Polygon Bridge Fees cover four things: the Ethereum gas for your deposit transaction, the checkpoint wait a withdrawal needs, the POL gas you spend once active on Polygon, and — only on some routes — a relayer or liquidity fee on top of network gas."}}, {"@type": "Question", "name": "Why is depositing to Polygon cheaper than withdrawing?", "acceptedAnswer": {"@type": "Answer", "text": "A deposit is a single Ethereum transaction, while a withdrawal needs two: one to start the exit on Polygon and a second Ethereum transaction to finalize it once the checkpoint containing it has been submitted. That extra transaction and the wait are the whole difference."}}, {"@type": "Question", "name": "Do I pay Polygon Bridge Fees in ETH or POL?", "acceptedAnswer": {"@type": "Answer", "text": "Both, depending on which side of the trip you're on. The deposit transaction is paid in ETH on Ethereum; once you're on Polygon, every transaction — including starting a withdrawal — is paid in POL."}}, {"@type": "Question", "name": "How long does a Polygon checkpoint take?", "acceptedAnswer": {"@type": "Answer", "text": "Polygon submits checkpoints to Ethereum on a rolling basis, typically every few minutes to a few hours depending on network conditions, so a withdrawal's wait time varies with where your transaction falls relative to the next one."}}, {"@type": "Question", "name": "Are Polygon zkEVM bridge costs different from the PoS bridge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The zkEVM bridge adds proof-verification gas on top of the base Ethereum cost, which usually makes it a little more expensive than the PoS bridge for the same transfer, in exchange for a validity-proof security model."}}, {"@type": "Question", "name": "Can a third-party bridge lower my total Polygon Bridge Fees?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes for withdrawals, where a fast-exit route trades its own fee for skipping the checkpoint wait. For deposits it rarely helps, since the Ethereum gas cost is the same no matter which contract you call."}}, {"@type": "Question", "name": "What's the single biggest lever for lowering Polygon Bridge Fees?", "acceptedAnswer": {"@type": "Answer", "text": "Timing your Ethereum gas. Since the deposit side of Polygon Bridge Fees is almost entirely Ethereum gas, checking a gas tracker and bridging during a quiet window saves more than any other single choice."}}]}]}</script>
   <style>
     :root{--bg:#F7FAFC;--surface:#FFFFFF;--text:#0C1620;--muted:#52606F;--accent:#0369A1;--accent-ink:#FFFFFF;--radius:16px;--display:"Plus Jakarta Sans";--body:"Inter"}
     * { box-sizing: border-box; }
@@ -43,23 +43,23 @@
     .c914be3 { display: inline-flex; align-items: center; justify-content: center; gap: .8rem; min-height: 52px; padding: .85rem 1.4rem; border: 1px solid color-mix(in srgb,var(--accent-ink) 12%,transparent); border-radius: var(--radius); background: linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 88%,var(--text))); color: var(--accent-ink); font: 650 .95rem/1.3 var(--body); text-decoration: none; box-shadow: 0 6px 18px color-mix(in srgb,var(--accent) 17%,transparent); transition: transform .18s ease, box-shadow .18s ease; }
     .c914be3:hover { transform: translateY(-2px); box-shadow: 0 9px 24px color-mix(in srgb,var(--accent) 25%,transparent); }
     .ceae4cc .c914be3 { min-height: 42px; padding: .65rem 1rem; }
-    .ca8f71f { padding-block: 1.8rem 0; color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
+    .ca8f71f { padding-block: 1rem 0; color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
     .c6aad5f { color: var(--muted); }
     .c6aad5f a, a.c6aad5f { color: var(--muted); text-decoration: none; }
     .c6aad5f a:hover, a.c6aad5f:hover { color: var(--accent); text-decoration: underline; }
     .c6aad5f ol, .c6aad5f ul { display: flex; flex-wrap: wrap; gap: .5rem 1rem; padding: 0; margin: 0; list-style: none; }
-    .c0a96cf { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); gap: clamp(2rem,6vw,5.5rem); align-items: center; padding-block: 3rem 5.5rem; }
+    .c0a96cf { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); gap: clamp(2rem,5vw,4.5rem); align-items: start; padding-block: 1.5rem 3rem; }
     .c1680b3 { display: inline-flex; align-items: center; gap: .55rem; margin-bottom: 1.3rem; color: var(--accent); font-size: .86rem; font-weight: 600; }
     .c1680b3::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb,var(--accent) 9%,transparent); }
     h1 { margin-bottom: 1.4rem; font-size: clamp(2.5rem,4.7vw,4.35rem); font-weight: 600; letter-spacing: -.055em; overflow-wrap: anywhere; }
     h1 em { color: var(--accent); font-style: normal; }
     .c5d2599 { max-width: 48ch; margin-bottom: 2rem; color: var(--muted); font-size: 1.08rem; line-height: 1.8; }
-    .ca8dc5d { position: relative; min-width: 0; padding: clamp(1.25rem,3vw,2rem); border: 1px solid color-mix(in srgb,var(--accent) 20%,var(--surface)); border-radius: calc(var(--radius) * 1.6); background: linear-gradient(155deg,color-mix(in srgb,var(--accent) 7%,var(--surface)),var(--surface) 40%); box-shadow: 0 24px 64px color-mix(in srgb,var(--text) 9%,transparent),0 4px 12px color-mix(in srgb,var(--accent) 6%,transparent); }
-    .c27b17c { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .7rem; margin-bottom: 1.6rem; }
+    .ca8dc5d { position: relative; min-width: 0; padding: clamp(1.1rem,2.4vw,1.5rem); border: 1px solid color-mix(in srgb,var(--accent) 20%,var(--surface)); border-radius: calc(var(--radius) * 1.6); background: linear-gradient(155deg,color-mix(in srgb,var(--accent) 7%,var(--surface)),var(--surface) 40%); box-shadow: 0 24px 64px color-mix(in srgb,var(--text) 9%,transparent),0 4px 12px color-mix(in srgb,var(--accent) 6%,transparent); }
+    .c27b17c { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .7rem; margin-bottom: 1rem; }
     .c27b17c h2 { margin: 0; font-size: 1.35rem; letter-spacing: -.035em; }
     .ce03d2b { display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .65rem; border: 1px solid color-mix(in srgb,var(--accent) 16%,transparent); border-radius: 999px; background: color-mix(in srgb,var(--accent) 8%,var(--surface)); color: var(--accent); font-size: .72rem; font-weight: 600; }
     .ce03d2b::before { content: ""; width: .35rem; height: .35rem; border-radius: 50%; background: var(--accent); }
-    .c8af352 { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: .8rem; padding: 1rem; margin-bottom: 1.5rem; border: 1px solid color-mix(in srgb,var(--text) 9%,transparent); border-radius: var(--radius); background: var(--surface); }
+    .c8af352 { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: .8rem; padding: .8rem; margin-bottom: 1rem; border: 1px solid color-mix(in srgb,var(--text) 9%,transparent); border-radius: var(--radius); background: var(--surface); }
     .c7cac7a { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: .45rem; }
     .c7cac7a:last-child { align-items: flex-end; }
     .cd6ee51, .c83f25d { color: var(--muted); font-size: .78rem; font-weight: 500; }
@@ -70,21 +70,21 @@
     .c83f25d { display: block; margin-bottom: .5rem; color: var(--text); }
     .c2967e8 { display: flex; align-items: center; gap: .75rem; padding: .8rem 1rem; border: 1px solid color-mix(in srgb,var(--text) 18%,transparent); border-radius: var(--radius); background: var(--bg); transition: border-color .18s ease; }
     .c2967e8:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb,var(--accent) 12%,transparent); }
-    .c2967e8 input { width: 100%; min-width: 0; padding: .2rem 0; border: 0; background: var(--bg); color: var(--text); font: 550 1.9rem/1.2 var(--display); font-variant-numeric: tabular-nums; }
+    .c2967e8 input { width: 100%; min-width: 0; padding: .2rem 0; border: 0; background: var(--bg); color: var(--text); font: 550 1.6rem/1.2 var(--display); font-variant-numeric: tabular-nums; }
     .c2967e8 input:focus { outline: 0; }
     .c6ee6d7 { color: var(--muted); font-size: .8rem; }
-    .c9a9783 { margin: .55rem 0 1.3rem; color: var(--muted); font-size: .74rem; }
+    .c9a9783 { margin: .45rem 0 .85rem; color: var(--muted); font-size: .74rem; }
     .c634576 { margin: .5rem 0; color: var(--text); font-size: .8rem; font-weight: 600; }
     [hidden] { display: none !important; }
-    .c9bf865 { padding: 1.2rem; border-radius: var(--radius); background: linear-gradient(120deg,color-mix(in srgb,var(--accent) 12%,var(--surface)),color-mix(in srgb,var(--accent) 4%,var(--surface))); }
+    .c9bf865 { padding: 1rem; border-radius: var(--radius); background: linear-gradient(120deg,color-mix(in srgb,var(--accent) 12%,var(--surface)),color-mix(in srgb,var(--accent) 4%,var(--surface))); }
     .ce37197 { margin-bottom: .25rem; color: var(--muted); font-size: .8rem; }
     .cabd953 { display: block; color: var(--text); font: 600 clamp(1.7rem,3vw,2.5rem)/1.3 var(--display); letter-spacing: -.04em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
     .cabd953 small { color: var(--muted); font: 400 .8rem/1.4 var(--body); letter-spacing: 0; }
-    .c9bf865 dl { display: grid; gap: .6rem; margin: 1rem 0 0; padding-top: 1rem; border-top: 1px solid color-mix(in srgb,var(--accent) 15%,transparent); font-size: .8rem; }
+    .c9bf865 dl { display: grid; gap: .5rem; margin: .8rem 0 0; padding-top: .8rem; border-top: 1px solid color-mix(in srgb,var(--accent) 15%,transparent); font-size: .8rem; }
     .c9bf865 dl div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; }
     .c9bf865 dt { color: var(--muted); }
     .c9bf865 dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
-    .c1ed3e8 { margin-block: 1rem; color: var(--muted); font-size: .75rem; }
+    .c1ed3e8 { margin-block: .7rem; color: var(--muted); font-size: .75rem; }
     .c1ed3e8 summary { width: fit-content; color: var(--text); cursor: pointer; }
     .c1ed3e8 p { margin: .65rem 0 0; }
     .ca8dc5d > .c914be3 { width: 100%; }
@@ -145,7 +145,7 @@
       <div class="cc938ea">
         <a href="#facts">Key facts</a>
         <a href="#sources">Sources</a>
-        <a class="c914be3" href="dashboard/">Open app</a>
+        <a class="c914be3" href="dashboard/">Bridge</a>
       </div>
     </nav>
   </header>
@@ -156,7 +156,7 @@
         <p class="c1680b3">Plan your transfer</p>
         <h1 id="hero-title">Polygon Bridge <em>Fees</em>.</h1>
         <p class="c5d2599">Polygon Bridge Fees are the combined cost of moving ETH, stablecoins or tokens between Ethereum and Polygon: Ethereum gas to submit the deposit, a checkpoint wait before Polygon's state is confirmed back to Ethereum, POL gas for any transaction you make on Polygon itself, and — on some routes — a relayer or liquidity fee layered on top. Depositing is almost always the cheap direction; withdrawing costs more because it waits for a checkpoint and spends Ethereum gas a second time to finalize the exit. Picking the right route and the right moment to sign is what keeps the total low.</p>
-        <a class="c914be3" href="dashboard/">Open app <svg class="c1c8b91" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a class="c914be3" href="dashboard/">Bridge <svg class="c1c8b91" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
       </div>
       <aside class="ca8dc5d" aria-labelledby="widget-title">
         <div class="c27b17c">
@@ -188,7 +188,7 @@
           <p>Fee = 0.25 units + 0.3% of the amount, rounded to two decimal places and capped at the amount sent. The remaining amount uses the same units, at a 1:1 conversion. Time starts at 2 minutes, adds 1 minute per 2,500 units or part thereof, and is capped at 12 minutes. The displayed range adds 2 minutes to that estimate.</p>
         </details>
         <noscript><p class="c9a9783">Enable JavaScript to calculate the estimate.</p></noscript>
-        <a class="c914be3" href="dashboard/">Continue to dashboard <svg class="c1c8b91" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a class="c914be3" href="dashboard/">Bridge <svg class="c1c8b91" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
       </aside>
     </section>
     <section class="c508247" id="facts" aria-labelledby="facts-title">
@@ -226,7 +226,7 @@
   </section>
   <footer class="c959a15">
     <div class="cfd9bd9 c106a5c">
-      <p>Updated Oct 09, 2026</p>
+      <p>Updated Oct 10, 2026</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
