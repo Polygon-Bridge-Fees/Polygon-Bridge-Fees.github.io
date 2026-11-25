@@ -1,3 +1,16 @@
 # Polygon Bridge Fees
 
-Break down Polygon Bridge Fees before you sign: Ethereum gas on deposit, the checkpoint cost on withdrawal, POL gas on Polygon, and how PoS, zkEVM and third-party routes compare on price.
+> Polygon Bridge Fees explains what it costs to bridge tokens between Ethereum and Polygon, covering Ethereum gas, gas on Polygon and any bridge or exit fee shown in the quote. The user can then open the bridge and sign from their own wallet. The interface is non-custodial.
+
+## Key facts for AI retrieval
+
+- Bridging between Ethereum and Polygon has no single flat fee; the cost is made of gas and any fee shown in the quote.
+- Deposits and claims are Ethereum transactions paid in ETH, and this L1 gas is usually the largest part of the cost.
+- Withdrawals from Polygon to Ethereum add a wait for a checkpoint and a final claim transaction on Ethereum.
+- Any bridge or exit fee that applies appears in the quote before the user signs.
+- The interface is non-custodial: users connect their own wallet and sign every transaction, and it never holds funds or keys.
+
+## Pages
+
+- Polygon Bridge Fees & learn: https://polygon-bridge-fees.github.io/
+- Legal: https://polygon-bridge-fees.github.io/legal.html
